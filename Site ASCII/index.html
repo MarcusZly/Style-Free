@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um site para a ASCII">
+    <meta name="keyword" content="Site de Roupas">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <title>Style Free</title>
+</head>
+
+<body>
+    <!--Aqui eu comecei fazendo uma barra de naveção ''menu'' com a função de navbar, contendo meu logo,
+    um botão de Home que serve para voltar para a pagina inicial o botão de Pordutos com a função de dropdown
+    para conter as categorias(masculina,feminina e infantil) e por fim um botão de contato me levando para a
+    parte que tem os meus meios de contato!-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Style Free!</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#produtos" class="dropbtn">Produtos</a>
+                <div class="conteudo-produtos">
+                    <p>Masculino</p>
+                    <p>Feminino</p>
+                    <p>Infantil</p>
+                </div>
+            </div>
+            <a href="#sobre-nos">Sobre Nós</a>
+            <a id="botao" href="#contato">Contato</a>
+        </div>
+    </nav>
+    <!--Já nessa parte do codigo, tendo em vista o requisito de header ''cabeçalho'' do codigo, eu optei por 
+    fazer uma introdução do site além de colocar o botão de Compre agora, que me levara para a parte destaque dos
+    meus produtos em promoção e por vim um banner que transmite o estilo e a estetica do meu site de roupas!
+    Vale resaltar que eu utilei uma div e dividi ela em dois blocos para fazer isso.-->
+    <header class="header">
+        <div class="headline">
+            <h2 style="letter-spacing:5px;">Você chegou na melhor loja!!</h2>
+            <h2 style="font-size:40px">Aqui possuimos o estilo livre que você busca.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius beatae in odio et, culpa magnam minus
+                voluptatibus, at iure velit, distinctio similique voluptas natus ad rem mollitia esse quas numquam!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius beatae in odio et, culpa magnam minus
+                voluptatibus, at iure velit, distinctio similique voluptas natus ad rem mollitia esse quas numquam!</p>
+            <a href="#produtos" class="contact-btn">Compre Agora.</a>
+
+        </div>
+        <div class="img-headline">
+            <img style="max-width: 90%;" src="img/style_free_banner.png">
+
+        </div>
+
+    </header>
+    <hr>
+    <!--Já nessa parte eu criei uma seção com o <section> dentro dessa seção fiz 5 card contendo roupas diferentes
+        e fiz com que fossem roupas em promoção para ser chamativo e atrair clientes, fiz uma breve descrição do produto
+        e fiz um botão com link ''Ver Detalhes'' para levar as pessoas a uma pagina contendo o produto que se interessarem
+        -->
+    <section id="produtos">
+        <h2>Produtos com promoção, não perca!!!</h2>
+        <div class="produtos">
+            <div class="card">
+                <h3>Blusa Estampada</h3>
+                <img src="img/blusa-estampada.jpg" alt="Blusa-Estampada" width="100%">
+                <h4><del>R$120,00 </del>POR R$79,99</h4>
+                <p>Essa e a blusa que você procura livre em todos os sentidos, o rolê com ela vai ficar melhor!</p>
+                <a id="botao-produtos" href="produto1.html">Ver Detalhes</a>
+            </div>
+            <div class="card">
+                <h3>Conjunto Livre</h3>
+                <img src="img/conjunto-livre.jpg" alt="Conjunto-Livre" width="100%">
+                <h4><del>R$230,00 </del>POR R$149,99</h4>
+                <p>O melhor conjunto de roupas para dar aquele rolê com os amigos, venha ser livre com nosso conjunto!
+                </p>
+                <a id="botao-produtos" href="produto2.html">Ver Detalhes</a>
+            </div>
+            <div class="card">
+                <h3>Moletom</h3>
+                <img src="img/moletom.jpg" alt="Moletom" width="100%">
+                <h4><del>R$150,00 </del>POR R$99,99</h4>
+                <p>Um moletom extremamente confortavel e impactante, com ele o rolê vai ficar muito mais completo!.</p>
+                <a id="botao-produtos" href="produto3.html">Ver Detalhes</a>
+            </div>
+            <div class="card">
+                <h3>Calça Cargo</h3>
+                <img src="img/calça-cargo.jpg" alt="Calça-Cargo" width="100%">
+                <h4><del>R$179,00 </del>POR R$135,99</h4>
+                <p>O melhor estilo de calça para se dá um rolê, confortavel em todos os sentidos e livre igual seu
+                    estilo!.</p>
+                <a id="botao-produtos" href="produto4.html">Ver Detalhes</a>
+            </div>
+            <div class="card">
+                <h3>Bermuda Jeans</h3>
+                <img src="img/bermuda-jeans.jpg" alt="Bermuda-Jeans" width="100%">
+                <h4><del>R$120,00 </del>POR R$89,99</h4>
+                <p>Aquela bermuda para dar uma diversificada no seu visual, seja livre e impactante usando ela.</p>
+                <a id="botao-produtos" href="produto5.html">Ver Detalhes</a>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!--Aqui utilizei novamente o <section> criando uma seção sobre-nos dentro da pagina inicial, linkada com meu botão 
+        sobre nos na barra de navegação no meu <navbar> Aqui e onde eu demonstro a principal historia da nossa loja, 
+            nossa missão/objetivo e falo dos valores que compoem a loja-->
+
+    <Section id="sobre-nos">
+        <h2>Sobre Nos</h2>
+        <div class="historia">
+            <h3>Nossa história</h3>
+            <p>Somos uma empresa diversificada que começou vendendo peças de roupa por meio do boca a boca. Com o
+                retorno positivo que recebemos, conseguimos expandir nossos negócios. Ao longo dos anos, identificamos
+                oportunidades no nicho de streetwear e, atualmente, somos uma loja especializada nesse segmento..</p>
+        </div>
+        <div class="missao">
+            <h3>Nossa Missão</h3>
+            <p>Buscamos atender os clientes que apreciam a moda de rua (streetwear) e nosso objetivo é levar esse estilo
+                para um público mais amplo. Além disso, nossa principal força motriz é o respeito e a atenção com que
+                lidamos com nossos clientes. Somos uma loja completamente transparente, oferecendo a troca de peças que
+                foram enviadas incorretamente ou com problemas, desde que estejam dentro do prazo.</p>
+        </div>
+        <div class="valores">
+            <h3>Nossos Valores</h3>
+            <ul>
+                <li>Amamos a moda de rua e a inovação dos estilos</li>
+                <li>Respeito, ética, diversidade e criatividade</li>
+                <li>Satisfação dos clientes; eles são nosso alicerce</li>
+                <li>Orgulho e comprometimento com o movimento streetwear</li>
+                <li>Inovação em busca de estilos que nos acolham</li>
+            </ul>
+        </div>
+
+    </Section>
+    <!--Por vim, para finalizar essa parte principal do site utilizei o <footer> para fazer o rodape do meu site,
+        julguei que seria mais estetico meus contatos estar no rodape juntamente com o copyright, linkei meu botão de
+        contato com essa seção e utilize icones para as minhas principais formas de contato!-->
+
+    <footer>
+        <div class="footer-container">
+            <div class="descricao-rodape">
+                <h1 class="rodape">Todas as imagens e recursos utilizados na criação desse site são livres de direitos
+                    autorais.</h1>
+            </div>
+            <div class="contatos-rodape">
+                <h2 id="contato">Contatos:</h2>
+                <a href="https://w.app/Marcus" class="contact-link"><img src="img/icon-whatsapp.png"
+                        class="contato-icon" alt="Whatsapp">Whatsapp</a>
+                <a href="https://www.instagram.com/marcusznly/" class="contact-link"><img src="img/ig-instagram.png"
+                        class="contato-icon" alt="Instagram">Instagram</a>
+                <a href="https://github.com/MarcusZly" class="contact-link"><img src="img/icon-github.png"
+                        class="contato-icon" alt="Github">Github</a>
+                <a href="https://www.linkedin.com/in/marcus-luz-4670b221b/" class="contact-link"><img
+                        src="img/icon-linkedin.png" class="contato-icon" alt="Linkedin">Linkedin</a>
+            </div>
+        </div>
+        <b style="color:white;">©2024, Style Free! Todos os direitos reservados.</b>
+    </footer>
+
+
+</body>
+
+</html>

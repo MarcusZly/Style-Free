@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/*A estilização da minha pagina de coleta de informações(endereço) para o envio do produto o tipo de coloração da pagina
+e a font utilizada*/
+body {
+    background: rgb(236, 236, 236);
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/*Estilização textual, a centralização do texto*/
+h3 {
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+}
+
+h4 {
+    text-align: center;
+    margin-left: 50px;
+}
+
+/*informando que o <form> vai ser centralizado e o tamanho que ele vai ficar dentro da <div>*/
+.container-formulario {
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+}
+
+/*Fazer com que o formulario seja mais estetico, colocando uma margem e adicionando um espaçamento entre os campos
+do formulario, além de fazer com que ele tenha uma borda e um sombreamento para que o formulario tenha um destaque
+dentro dessa pagina*/
+.formulario {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgb(92, 92, 92);
+}
+
+/*ajuste do meu formulario na pagina*/
+form {
+    margin-left: 50px;
+    max-width: 400px;
+}
+
+/*ajuste dos campos do meu formulario*/
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*Ajuste do meu formulario no geral, informando a largura que vai ter, o espaçamento dentro dele, a distancia 
+pro final da pagina e o tipo de borda*/
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*estilização do botão ''Finalizar Compra'' que retorna para pagina inicial fazendo um espaçamento interno, centralizando
+o texto fazendo a coloração, arredondando ele, ajustando a largura e criando um hover para mudar coloração ao passar
+mouse*/
+.button-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #180F4A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-link:hover {
+    background-color: #FF2978;
+}

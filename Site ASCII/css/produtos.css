@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    background: rgb(236, 236, 236);
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/*aqui e aonde faço com que a minha <div> que tem os meus produtos tenha um tipo flex, para ser mais ajustavel */
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/*faço o ajuste do tamanho da imagem do produto com o flex, já que o display e flex*/
+.img-produto {
+    flex: 1;
+}
+
+/*faço o ajuste do bloco que contem os detalhes do produto, a parte de texto*/
+.detalhes-produto {
+    flex: 1.5;
+
+}
+
+/*faça com que as caixas do formulario tenha uma margem a direita*/
+.detalhes-produto label {
+    margin-right: 10px;
+}
+
+/*faço o espaçamento e a largura do formulario*/
+.quantity-input {
+    width: 50px;
+    padding: 5px;
+}
+
+/*faço com que a seleção de cores/tamanho e quantidade tenha uma margem da parte de baixo do bloco*/
+.tamanho-produto {
+    margin-bottom: 10px;
+}
+
+/*o display que vai conter as informações da seleção das cores/tamanho e quantidade*/
+.tamanho-produto label {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/*faço a estilização do meu botão de finalizar compra, da mesma forma que fiz nos outros botões ao longo do site*/
+#botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #180F4A;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#botao:hover {
+    background-color: #FF2978;
+}
+
+.checkbox {
+    display: none;
+}
+
+/*Aqui faço uma estilização na checkbox para que fique mais agradavel e perca um pouco da estetica de formulario
+fazendo com que os botôes de seleções de cores/tamanho e quantidade tenha um tamanho agradevel, tenha uma borda
+seja centralizado, e uma coloração visivel*/
+.estilização-checkbox {
+    display: inline-block;
+    width: 65px;
+    height: 50px;
+    background-color: #180F4A;
+    border: 5px solid rgb(236, 236, 236);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/*aqui e aonde eu faço com que ao selecionar um tamanho/core ele seja marcado com uma coloração diferente para ser
+diferencial*/
+.checkbox:checked+.estilização-checkbox {
+    background-color: #180F4A;
+    color: white;
+    border-color: #FF2978;
+}

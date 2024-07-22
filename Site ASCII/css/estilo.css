@@ -1,0 +1,388 @@
+/*Import de duas font que uso ao longo do site*/
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(236, 236, 236);
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/*Aqui faço com que minha navbar tenha um display flexivel para eu poder ajustar ele da forma que eu quero,
+deixo ele alinhado no centro além de deixar a coloração branca tbm informo o tamanho dessa barra de navegação*/
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ajustar a forma que a logo vai ficar na minha barra de navegação*/
+.logo {
+    text-decoration: none;
+    flex: 20%;
+    margin-left: 10%;
+    text-align: left;
+
+}
+
+/*Tirar o ''sublinhar'' da logo que e um link*/
+.logo a {
+    text-decoration: none;
+}
+
+/*Utilizei uma font que importei para dar destaque a logo, e uma coloração que utilizei por todo o site para deixar uma,
+estetica parecida além de aumentar o tamanho da letra.*/
+.logo h1 {
+    font-family: "Bona Nova SC", serif;
+    color: #180F4A;
+    font-size: 34px;
+}
+
+/*Dentro da <navbar> eu tenho uma <div> que tem como class menu ela contem o botão de menu, produtos o dropdown 
+e o contato nessa parte do css, eu ajusto a forma como esses botões ficaram na barra de navegação, além de estilizar
+com as cores do meu site e criar uma função de hover ao passar o mouse por cima e mudar a coloração*/
+.menu {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: #180F4A;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: #FF2978;
+    border-top: 4px solid #180F4A;
+}
+
+/*nesse trecho do meu css eu tenho a estilização do meu dropdown feito em inline-block, a estilização como ficara
+as bordas quando ocorrer o dropdown ao passar o mouse pelo botão de ''produtos'' o formato o ajuste dentro do bloco
+e as colorações. Além de eu usar hover para estilizar quando o mouse passar o mouse tbm*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.conteudo-produtos {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 2px 2px 5px rgb(92, 92, 92);
+    z-index: 1;
+    border-radius: 5px;
+    border: 1px solid #FF2978;
+    margin-top: 10px;
+}
+
+.conteudo-produtos p {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.conteudo-produtos p:last-child {
+    border-bottom: none;
+}
+
+.conteudo-produtos p:hover {
+    background-color: #180F4A;
+    color: white;
+    border-radius: 5px;
+}
+
+.dropdown:hover .conteudo-produtos {
+    display: block;
+}
+
+/*Aqui e a estilização do meu botão de ''contato'' na minha navbar, faço ele de forma arredondada com border-radius e ajusto
+ele com margin, além de fazer a coloração em baixo faço um hover, para ele mudar esteticamente com o mouse em cima.*/
+#botao {
+    background: #180F4A;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover {
+    border: none;
+    background: #FF2978;
+}
+
+/*Aqui começo a estilização do meu header aonde tem minha ''introdução'' do meu site e meu banner
+alem do meu botão de ''compre agora'' sempre mantendo o display flex, para eu conseguir ajustar da melhor forma 
+possivel para o site, deixando centralizado para uma melhor estetica, usando margin para ajustar ele dentro dos
+''blocos'' <div> fazendo a estilização textual utilizando font e color*/
+.header {
+    background: rgb(236, 236, 236);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    margin-left: 10%;
+    flex: 40%;
+}
+
+.headline h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #180F4A;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p {
+    color: black;
+    text-align: left;
+}
+
+/*Estilização do meu botão ''Compre Agora'' que tem no <header> tirando o sublinhar dele fazendo um hover dele, 
+seguindo a estetica do site, usando suas colorações e mexendo nele atravês do padding para um espaçamento*/
+.contact-btn {
+    display: inline-block;
+    background: #FF2978;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background: #180F4A;
+}
+
+/*Aqui e aonde eu faço o ajuste da minha imagem que utilizo como banner no meu <header>*/
+.img-headline {
+    margin-right: 10%;
+    flex: 40%;
+    text-align: center;
+}
+
+/*Aqui eu estilizo minhas <section> falando o tipo de coloração de fundo que vão ter, o tipo de display que e inline-block
+que fica mais facil de ajustar já que são em linhas e blocos, utilizo margin para ajustar e centralizo tudo, alem do width
+para ajudar tbm*/
+section {
+    background: rgb(236, 236, 236);
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+/*Aqui fica minha estilização da seções e do <h2> que normalmente uso dentro dessas seções, a font importada, coloração
+a largura o tamanho da letra*/
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: "Bona Nova SC", serif;
+    font-weight: bold;
+    color: #180F4A
+}
+
+/*dentro da <section> de produtos eu crio a class produtos para colocar meus cards e meus produtos promocionais,
+utilizad inline-block no display para melhor ajuste*/
+.produtos {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+/*Aqui e aonde eu faço a estilização dos meus card, desda margem de distancia, ao tipo de coloração, o tamanho de largura
+e altura o sombreamento do card para dar um destaque e a criação das bordas. e utilizar overflow:hidden para n ter 
+conteudo vazado do card*/
+.card {
+    display: inline-block;
+    padding: 10px;
+    margin: 1%;
+    background: rgb(205, 205, 205);
+    color: rgb(0, 0, 0);
+    width: 300px;
+    height: 650px;
+    box-shadow: 2px 2px 5px rgb(92, 92, 92);
+    border: 1px solid #FF2978;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*estilização das imagens que ficam dentro do card, para ele prencherem todo o espaço, o tamanho dela, configurar
+para que não tenha nenhuma distorção com object-fit e fazer uma arredondamento dos cantos*/
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+/*Estilização da escrita dos card para ser mais preciso o nome dos produtos.*/
+.card h3 {
+    margin-top: 10px;
+    color: black;
+    font-family: "Bona Nova SC", serif;
+}
+
+/*Aqui e aonde eu estilizo o botão que fica dentro do card dos meus produtos, o botão ''Ver Detalhes'' fazendo
+sua coloração suas bordas, o espaçamento que ele deve ter entre o conteudo do card a centralização dele, retirando
+o sublinhar que tem no link e por vim criando um espaçamento dentro do botão além de fazer um hover*/
+#botao-produtos {
+    background: #180F4A;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    align-self: center;
+    text-decoration: none;
+}
+
+#botao-produtos:hover {
+    border: none;
+    background: #FF2978;
+}
+
+/*Aqui e aonde fica as estilizações das classes da minha <Section> que contem o sobre-nos utilizo margin, para ajustar
+padding para o espaçamento e faço uma borda, além de um leve sombreamento para a borda ficar mais estetica e com destaque
+no site*/
+.historia {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgb(92, 92, 92);
+
+}
+
+.missao {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgb(92, 92, 92);
+
+}
+
+.valores {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgb(92, 92, 92);
+
+}
+
+/*Estilização do tamanho da letra e ajuste de onde deve ficar os titulos da informação da seção sobre nos*/
+h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/*Na parte que eu descrevo os valores da minha loja, eu utilizo uma lista para ficar mais organizado
+aqui e aonde eu faço a estilização, fazendo um recuo para centralizar essa lista, aumentando o tamanho da letra
+e adicionando um leve tamanho entre cada item*/
+.valores ul {
+    list-style-type: disc;
+    padding-left: 10px;
+}
+
+.valores li {
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+
+/*Aqui e a estilização para parte final do meu site o rodapê <footer> aqui utilizo linear-gradiente dentro do background
+para criar um efeito de degradê na coloração deixo os textos centralizados e faço um espaçamento entre eles, utilizo 
+overflow:hidden, para manter o conteudo dentro do footer ajudando na responsavidade*/
+footer {
+    background-image: linear-gradient(180deg, #180F4A, #090422, black);
+    color: white;
+    text-align: center;
+    border-top: 5px solid #FF2978;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.descricao-rodape {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.contatos-rodape {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/*Aqui faço a estilização dos meus contatos que fica dentro do rodapê <footeR> faço a coloração do texto, removo o
+sublinhamento, alinho o texto com os icon e faço seu espaçamento com gap, faço um hoover para alterar a cor dos
+icon quando eu passar o mouse, além de ajustar o tamanho desses icones*/
+.contact-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-link:hover {
+    color: #FF2978;
+}
+
+.contato-icon {
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 8px;
+    filter: brightness(0) invert(1);
+    /* Muda a cor da imagem para branco */
+}
+
+/*font que utilizo no rodape e o ajuste do texto*/
+.rodape {
+    font-family: "Bona Nova SC", serif;
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/*o tipo de display que vai ser minha div de copyright e seu distanciamento */
+footer b {
+    display: block;
+    margin-top: 10px;
+}

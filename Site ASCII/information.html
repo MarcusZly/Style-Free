@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/information.css">
+    <title>Finalizar Compra!</title>
+</head>
+<!--Aqui novamente repito o mesmo processo de ter uma barra de navegação que pode levar o usuario para pagina inicial.-->
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Style Free!</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#produtos" class="dropbtn">Produtos</a>
+                <div class="conteudo-produtos">
+                    <p>Masculino</p>
+                    <p>Feminino</p>
+                    <p>Infantil</p>
+                </div>
+            </div>
+            <a href="#sobre-nos">Sobre Nós</a>
+            <a id="botao" href="#contato">Contato</a>
+        </div>
+    </nav>
+    <!--Utilizo as tag <h3> e <h4> para dar um destaque informando que o cliente está no processo final da compra dele,
+    precisando somente informar seus dados para a entrega do produto-->
+    <h3>Vamo Finalizar sua compra!</h3>
+    <h4>Faça o prenchimento dos campos abaixos, para conseguirmos realizar sua entrega!!</h4>
+    <!--Aqui eu crio uma <div> e depois utilizo <form> para criar um formulario para recolher as principais informações
+    para a entrega do produto, país, estado, cidade, rua, numeração, completo do cliente e por fim uma forma de contato
+    e-mail para server de contato com o cliente. Finalizo com um botão ''Finalizar Comprar'' que retorna para a 
+    pagina inicial do site.-->
+    <div class="container-formulario">
+        <form class="formulario">
+            <label>País: <input type="text" placeholder="País" id="país" required>
+            </label>
+
+            <label>Estado: <input type="text" placeholder="Estado" id="estado" required>
+            </label>
+
+            <label>Cidado: <input type="text" placeholder="Cidade" id="cidade" required>
+            </label>
+
+            <label>Rua: <input type="text" placeholder="Rua" id="rua" required>
+            </label>
+
+            <label>Numeração: <input type="text" placeholder="Numeração" id="numeração" required>
+            </label>
+
+            <label>Complemento: <input type="text" placeholder="Complemento" id="complemento" required>
+            </label>
+
+            <label>E-mail: <input type="email" placeholder="E-mail" id="e-mail" required>
+            </label>
+
+            <a href="index.html" class="button-link">
+                Finalizar Compra
+            </a>
+        </form>
+    </div>
+</body>
+
+</html>

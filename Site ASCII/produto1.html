@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <title>Blusa Estampada</title>
+</head>
+<!--Vale resaltar que os arquivos produto1,2,3,4 e 5 são iguais cada um contendo um produto de destaque da minha pagina
+(somente as informações textuais como descrição, preço, imagem de produto são diferente o codigo em si e igual.)
+principal que ao clicar no botão ''Ver Detalhes'' será encaminhado para o produto em questão.-->
+
+<body>
+    <!--Aqui eu recriei a minha <navbar> para eu ter uma barra de navegação podendo retornar a pagina principal,
+        caso eu clique no meu logo ou no meu botão de Home.-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Style Free!</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#produtos" class="dropbtn">Produtos</a>
+                <div class="conteudo-produtos">
+                    <p>Masculino</p>
+                    <p>Feminino</p>
+                    <p>Infantil</p>
+                </div>
+            </div>
+            <a href="#sobre-nos">Sobre Nós</a>
+            <a id="botao" href="#contatos">Contato</a>
+        </div>
+    </nav>
+    <!--Aqui eu crio uma <section> para conter o meu produto, uso as tag <h2> e <h3> para dar destaque sobre o nome
+        do produto e o preço chamando a atenção que e um produto em promoção, depois crio uma <div> que contem minha
+        seleção de tamanho com botões no fomarto de formulario checkbox para poder selecionar mais de um tamanho,
+        faço a mesma coisa para a <div> de cores, para o cliente poder escolher as cores da roupa dele e por vim,
+        crio uma <div> para quantidade aonde o cliente pode selecionar quantas roupas ele vai querer comprar.
+        No final dessa section, tem um botão de ''comprar'' que leva o usuario para uma pagina que contem um
+        ''formulario'' para prencher dados para entrega do produto.-->
+    <section>
+        <div class="container">
+            <div class="img-produto">
+                <img src="img/blusa-estampada.jpg" alt="Blusa-Estampada" width="100%">
+            </div>
+            <div class="detalhes-produto">
+                <h2>Blusa Estampada</h2>
+                <h3>Preço em promoção Imperdivel!! <br> DE <del>R$120,00</del> <br>PARA R$79,99</h3>
+                <p>Além dessa blusa ter seu estilo livre com uma bela estampada de skate remetendo nosso nicho de
+                    streetwear
+                    ela é feita com o algodão pima, um produto extremamente resistente e durável pode ser lavado em
+                    máquina
+                    sem preocupações, porem com cuidado para água muito quente que pode queimar as fibras e deixar a
+                    blusa
+                    aspera com o tempo, sempre importante mantela nos sacos protetores para manter a qualidade da blusa.
+                </p>
+                <div class="tamanho-produto">
+                    <h3>Seleção de Tamanhos:</h3>
+                    <label>
+                        <input type="checkbox" name="size" value="P" class="checkbox">
+                        <div class="estilização-checkbox">P</div>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="size" value="M" class="checkbox">
+                        <div class="estilização-checkbox">M</div>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="size" value="G" class="checkbox">
+                        <div class="estilização-checkbox">G</div>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="size" value="GG" class="checkbox">
+                        <div class="estilização-checkbox">GG</div>
+                    </label>
+                </div>
+                <div class="tamanho-produto">
+                    <h3>Seleção de cores:</h3>
+                    <label>
+                        <input type="checkbox" name="color" value="white" class="checkbox">
+                        <div class="estilização-checkbox">Branco</div>
+                    </label>
+                    <label><input type="checkbox" name="color" value="grey" class="checkbox">
+                        <div class="estilização-checkbox">Cinza</div>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="color" value="black" class="checkbox">
+                        <div class="estilização-checkbox">Preto</div>
+                    </label>
+                </div>
+                <div class="tamanho-produto">
+                    <b style="font-size:larger">Quantidade:</b>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+                <a id="botao" href="information.html">Comprar</a>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
